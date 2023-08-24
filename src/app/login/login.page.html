@@ -1,0 +1,39 @@
+<ion-header>
+  <!-- <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content>
+
+<div class="img">
+    <img src="assets/yantio.jpg">
+    <h2 style="text-align: center; margin-top: 70px;">
+      <strong>Inicia Sesión</strong>
+    </h2>
+</div>
+
+
+<form class="form" (ngSubmit)="login()">
+   <ion-item lines="full">
+     <ion-label position="floating">Usuario</ion-label>
+     <ion-input type="text" [(ngModel)]="info.usuario" name="usuario" required></ion-input>
+   </ion-item>
+
+   <ion-item lines="full">
+     <ion-label position="floating">Contraseña</ion-label>
+     <ion-input type="password" [(ngModel)]="info.contrasena" name="contrasena" required></ion-input>
+   </ion-item>
+<br>
+<br>
+<br>
+    <ion-row>
+     <ion-col>
+       <ion-button type="submit" expand="round" shape="full" color="secondary">Entrar</ion-button>
+     </ion-col>
+   </ion-row>
+
+ </form>
+</ion-content>

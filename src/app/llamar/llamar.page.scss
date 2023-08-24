@@ -1,0 +1,41 @@
+.boton{
+    left: 37%;
+    img{
+      max-width:50px;
+      max-height: 50px;
+  
+    }
+    .botonPolicia{
+      --background: #CAE0D5;
+      max-width: 56px;
+      max-height: 70px;
+      --background-activated: #d4d6d5;
+      margin-top: 40px;
+      }
+    .botonCruz{
+      --background: #CAE0D5;
+      max-width: 56px;
+      max-height: 70px;
+      margin-top: -25px;
+    }
+    .botonBomberos{
+      --background: #CAE0D5;
+      max-width: 56px;
+      max-height: 70px;
+      margin-top: -25px;
+      
+    }
+    
+    .botonContacto{
+      --background: #CAE0D5;
+      max-width: 56px;
+      max-height: 70px;
+      margin-top: -25px;
+      
+    }
+  }
+  .texto{
+    left: 52%;
+    text-align: center;
+    color: black;
+  }

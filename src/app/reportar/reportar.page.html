@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Reportar
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true" style="background-color:#FFFFFF;">
+  <div class="content"></div>
+  <ion-row>
+    <ion-col size="8">
+      <ion-input class="content1" value="¿Qué está pasando?"readonly></ion-input>
+    </ion-col>
+  </ion-row>
+
+
+
+  <ion-row>
+    <ion-col size="8">
+      <ion-item class="lista">
+        <!--<ion-label class="lista" placeholder="Tipo de reporte"></ion-label>-->
+        <ion-select  [(ngModel)]="todo.idTipo" name="idTipo" placeholder="Tipo de reporte">
+          <ion-select-option *ngFor="let t of tipo" [value]="t.id" >{{t.descripcion}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="8">
+      
+      <ion-input class="content2" placeholder="Descripción"  type="text" [(ngModel)]="todo.descripcion" name="descripcion"> </ion-input>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="8">
+      <ion-input class="content2" placeholder="Ubicación" [(ngModel)]="todo.ubicacion" name="ubicacion"></ion-input>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="8">
+      <ion-button class="boton" (click)="reportar()" >
+        Generar
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
+
+
+ <!-- <form (ngSubmit)="reportar()">
+   <ion-item>
+     
+    <ion-label position ="floating">Descripción</ion-label>
+      <ion-input type="text" [(ngModel)]="todo.descripcion" name="descripcion" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position ="floating">Ubicación</ion-label>
+      <ion-input [(ngModel)]="todo.ubicacion" name="ubicacion"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tipo de reporte</ion-label>
+      <ion-select [(ngModel)]="todo.idTipo" name="idTipo">
+        <ion-select-option *ngFor="let t of tipo" [value]="t.id" >{{t.descripcion}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-button ion-button type="submit" block>Reportar</ion-button>
+  </form>  -->

@@ -1,0 +1,7 @@
+{
+  "name": "Yantio",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
